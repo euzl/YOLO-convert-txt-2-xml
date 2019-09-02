@@ -8,13 +8,13 @@ import os
 # 이 경우 맥 터미널을 통해 .DS_Store 파일을 삭제해야합니다.
 # Ref : http://leechoong.com/posts/2018/ds_store/
 
-# (필독2) -- 저는 윈도우사용자니까 여기를 봅니다 ^*^
+# (필독2)             -- 저는 윈도우사용자니까 여기만 봅니다 ^*^ 맥은 둘 다 봐야됨.
+# 각자 환경에 맞게 경로 설정하세요.
 # IMG_PATH, txt_folder, labels 세 군데만 수정해주면 됨! 체크한 곳 <여기!> 바로 아랫줄만 수정하기!!
 # path 예시 : "/Users/desktop/dev/190902/data"
 ## 이 py파일이 위치한 폴더에 xml파일들이 저장된다. 저장할 폴더에 이 소스파일을 옮긴 뒤 실행하는 게 좋을듯!
 
 ##### 여기! #####
-# 각자 환경에 맞게 경로 설정하세요.
 IMG_PATH = "YOUR_IMG_FOLDER_PATH"
 fw = os.listdir(IMG_PATH)
 # path of save xml file
