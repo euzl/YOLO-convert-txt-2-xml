@@ -7,18 +7,26 @@ import os
 # 맥 사용자의 경우 .DS_Store 파일이 폴더 내에 자동으로 생성되어있는 경우가 있습니다.
 # 이 경우 맥 터미널을 통해 .DS_Store 파일을 삭제해야합니다.
 # Ref : http://leechoong.com/posts/2018/ds_store/
-# (필독2)
+
+# (필독2) -- 저는 윈도우사용자니까 여기를 봅니다 ^*^
+# IMG_PATH, txt_folder, labels 세 군데만 수정해주면 됨! 체크한 곳 <여기!> 바로 아랫줄만 수정하기!!
+# path 예시 : "/Users/desktop/dev/190902/data"
+## 이 py파일이 위치한 폴더에 xml파일들이 저장된다. 저장할 폴더에 이 소스파일을 옮긴 뒤 실행하는 게 좋을듯!
+
+##### 여기! #####
 # 각자 환경에 맞게 경로 설정하세요.
 IMG_PATH = "YOUR_IMG_FOLDER_PATH"
 fw = os.listdir(IMG_PATH)
 # path of save xml file
 save_path = '' # keep it blank
 
+##### 여기! #####
 # txt_folder is txt file root that using darknet rectbox
 txt_folder = 'YOUR_TXT_FOLDER_PATH'
 
+##### 여기! #####
 # 라벨 수정
-labels = ['dog_two_stand', 'dog_four_stand', 'dog_sit', 'dog_lying']
+labels = ['sleep_front', 'sleep_bread', 'sleep_side', 'sleep_face', 'sleep_comfort']
 global label
 label = ''
 
